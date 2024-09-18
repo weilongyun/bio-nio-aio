@@ -5,7 +5,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
-//单发单收单情况
+//模拟的场景：多个客户端来连接服务端，服务端采用的还是单线程，第一个连接上来的可以和服务端正常通信
+//第二个客户端连接会被服务端的ServerSocket挂起，连接不会报错，只不过不能和服务端进行通信，因为服务端与第一个客户端连接后进入while死循环了
 public class Server {
     public static void main(String[] args) {
         try {

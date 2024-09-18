@@ -8,6 +8,7 @@ git config user.email "498374215@qq.com"
 -- git生成公钥
 ssh-keygen -t rsa -C "498374215@qq.com"
 cat ~/.ssh/id_rsa.pub
+git remote set-url origin git@github.com:weilongyun/bio-nio-aio.git
 #zyb_project
 小游戏项目
 
