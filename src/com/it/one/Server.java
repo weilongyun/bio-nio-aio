@@ -15,7 +15,7 @@ public class Server {
             ServerSocket serverSocket = new ServerSocket(2222);
             //2、监听客户端的连接
             Socket socket = serverSocket.accept();
-            socket.setSoTimeout(5000);
+            //socket.setSoTimeout(5000);
             //3、从socket中获取字节输入流
             InputStream inputStream = socket.getInputStream();
             //4、将字符输入流封装成字符输入流

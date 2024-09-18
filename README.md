@@ -7,7 +7,7 @@ git config  user.name "498374215@qq.com"
 git config user.email "498374215@qq.com"
 -- git生成公钥
 ssh-keygen -t rsa -C "498374215@qq.com"
-
+cat ~/.ssh/id_rsa.pub
 #zyb_project
 小游戏项目
 
